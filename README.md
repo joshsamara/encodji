@@ -6,11 +6,7 @@ A library to:
 😵🙈🤖🙉💩😺🤐🧒😺😹🧑😿👽🧒🤐👦👧🧑😸😸🤐😼🙈👧🙉🤐👽🤐👦👧🧒😼🙈😹🤐🙉😸🤐😺😾🙉😽😼👦🙃
 ```
 
-aka
-
-```
-Encode regular stuff into a string of emojis.
-```
+aka *Encode regular stuff into a string of emojis.*
 
 as well as:
 
