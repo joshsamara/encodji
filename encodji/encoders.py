@@ -134,40 +134,11 @@ def generate_decoded(encoded):
             yield _decode_simple(char)
 
 
-def encode_string(string):
+def encode(string):
     """Create an enocoded string of text."""
     return ''.join(generate_encoded(string))
 
 
-def decode_string(encoded):
+def decode(encoded):
     """Create a decoded string of text."""
     return ''.join(generate_decoded(encoded))
-
-
-# Super simple sanity checks
-original = 'Thîs is Tôtally a TéS†®.'
-encoded = encode_string(original)
-decoded = decode_string(encoded)
-print(f"""
-Test single encode:
-
-Original: {original}
-Encoded:  {encoded}
-Decoded:  {decoded}
-""")
-assert original == decoded
-
-# We should be able to doubly encoded/decode
-double_encoded = encode_string(encoded)
-single_decoded = decode_string(double_encoded)
-double_decoded = decode_string(single_decoded)
-print(f"""
-Test Double encode:
-
-Original:       {original}
-Single encoded: {encoded}
-Double encoded: {double_encoded}
-Single decoded: {single_decoded}
-Double decoded: {double_decoded}
-""")
-assert double_decoded == original
