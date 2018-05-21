@@ -2,13 +2,9 @@
 Encoders and decoding utilities.
 """
 
-EMOJIS = [
-    '\U0001F947',
-    '\U0001F948',
-    '\U0001F949',
-    # Test for multi-character emojis
-    '\U0001F3F4\U000E0067\U000E0062\U000E0065\U000E006E\U000E0067\U000E007F'
-]
+from encodji.utils import load_emojis
+
+EMOJIS = load_emojis()
 SPACE = len(EMOJIS)
 SPECIAL_INDICATOR = '!'
 MULTI_INDICATOR = ' '
