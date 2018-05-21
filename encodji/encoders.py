@@ -1,6 +1,4 @@
-"""
-Encoders and decoding utilities.
-"""
+"""Encoders and decoding utilities."""
 
 from encodji.utils import load_emojis
 

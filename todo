@@ -1,0 +1,6 @@
+- Add a support flag (eg run for emojis supported by IOS)
+- Wrap pickle or something
+- Add nightly builds to refresh emoji lib if there are new ones
+- Decode to take an iterator
+- Better error handling
+- Pip installable package
